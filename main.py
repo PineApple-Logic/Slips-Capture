@@ -40,6 +40,7 @@ for filename in filenames:
             x['Details'].append(price[-3:])
         else:
             x['Price'].append(price)
+            x['Details'].append('')
 
 # Load slips to a CSV file
 if x['Details'] != '':
