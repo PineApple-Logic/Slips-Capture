@@ -2,6 +2,7 @@
 
 ### **Requirements** ###
 Note: There can only be one space.
+      The file type does not matter
 
 Slips name must be recorded in this formate:
 ````bash
