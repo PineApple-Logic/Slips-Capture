@@ -14,10 +14,10 @@ Slips name must be recorded in this formate:
 ### **Recorded Slips** ###
 In a csv file:
 ````bash
-Date        Details   Category Price  Duplicates
-2021-10-10  Checkers  C         R200
-2021-10-10  Checkers  C         R200   (2)
-2021-10-10  Builders  E         R5000
+Date        Details   Category      Price  Duplicates
+2021-10-10  Checkers  Consumables   R200
+2021-10-10  Checkers  Other         R200   (2)
+2021-10-10  Builders  Equipment     R5000
 ````
 
 ### SETUP ####
