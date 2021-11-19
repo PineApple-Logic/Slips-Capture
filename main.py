@@ -46,8 +46,8 @@ for filename in filenames:
         match_len(1)
         x['Details'].append(names[1])
         if names[2] == 'O':
+            names[2] = 'Accommodation'
             match_len(2)
-            x['Category'].append('Other')
         elif names[2] == 'A':
             names[2] = 'Accommodation'
             match_len(2)
