@@ -15,10 +15,10 @@ x = {"Date": [],
 date = f'./{today.strftime("%d-%b-%Y")}.csv'
 
 
-def match_len(num):
-    if len(names[num]) != 12:
-        add_to = 12 - len(names[num])
-        names[num].ljust(len(names[num]) + add_to)
+def match_len(name):
+    if len(name) != 12:
+        add_to = 12 - len(name)
+        name.ljust(len(name) + add_to)
 
 
 # Folder
@@ -32,49 +32,55 @@ print()
 # Capturing slips
 filenames = os.listdir(path)
 for filename in filenames:
-    names = filename[:-4].split()
-    if len(names) >= 6 or len(names) <= 2:
+    details = filename[filename.find('(') + 1: filename.find(')')]
+    file = filename.replace(filename[filename.find('('): filename.find(')') + 1], '')
+    names = file[:-4].split()
+    print(details)
+    print(file)
+    if len(names) >= 5 or len(names) <= 2:
         print()
-        print(f'Note that there is an abnormal amount of words/number sets for slip  ({filename})')
+        print(f'Note that there is an abnormal amount of words/number sets for slip  ({names})')
         print('It will not be recorded')
         print()
         input('Press Enter to continue')
         print()
     else:
         x['Date'].append(names[0])
-        match_len(1)
-        x['Details'].append(names[1])
-        if names[2] == 'O':
-            names[2] = 'Accommodation'
-            match_len(2)
-        elif names[2] == 'A':
-            names[2] = 'Accommodation'
-            match_len(2)
-        elif names[2] == 'C':
-            names[2] = 'Consumables'
-            match_len(2)
-        elif names[2] == 'E':
-            names[2] = 'Equipment'
-            match_len(2)
-        elif names[2] == 'T':
-            names[2] = 'Toll'
-            match_len(2)
-        elif names[2] == 'F':
-            names[2] = 'Food'
-            match_len(2)
-        elif names[2] == 'S':
-            names[2] = 'Stationery'
-            match_len(2)
+        if len(details) != 20:
+            add_to = 20 - len(details)
+            details.ljust(len(details) + add_to)
+        x['Details'].append(details)
+        if names[1] == 'O':
+            names[1] = 'Other'
+            match_len(names[1])
+        elif names[1] == 'A':
+            names[1] = 'Accommodation'
+            match_len(names[1])
+        elif names[1] == 'C':
+            names[1] = 'Consumables'
+            match_len(names[1])
+        elif names[1] == 'E':
+            names[1] = 'Equipment'
+            match_len(names[1])
+        elif names[1] == 'T':
+            names[1] = 'Toll'
+            match_len(names[1])
+        elif names[1] == 'F':
+            names[1] = 'Food'
+            match_len(names[1])
+        elif names[1] == 'S':
+            names[1] = 'Stationery'
+            match_len(names[1])
         else:
-            print(f"Failed to determine the Category's Full name of {names[2]}")
+            print(f"Failed to determine the Category's Full name of {names[1]}")
             print()
             full_name = input('Full name:')
-            names[2] = full_name
-            match_len(2)
-        x['Category'].append(names[2])
-        x['Price'].append(names[3])
-        if len(names) == 5:
-            x['Duplicate'].append(names[4])
+            names[1] = full_name
+            match_len(names[1])
+        x['Category'].append(names[1])
+        x['Price'].append(names[2])
+        if len(names) == 4:
+            x['Duplicate'].append(names[3])
         else:
             x['Duplicate'].append('')
 
