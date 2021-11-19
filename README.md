@@ -21,4 +21,4 @@ Date        Details   Category      Price  Duplicates
 ````
 
 ### SETUP ####
-Windows exe,  [Link](https://mega.nz/file/HxxREQbT#gemUdrKhsIkD29CVw6Y-vUXDMcWxkMuLmcgxfjSnpPo)
+Windows exe,  [Link](https://mega.nz/file/SpwgEBDI#u7nisXsnPQXv1u07N9sGjpTtNJH4S9WdlRADcxgenDE)
