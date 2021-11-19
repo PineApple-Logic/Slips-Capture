@@ -18,8 +18,7 @@ date = f'./{today.strftime("%d-%b-%Y")}.csv'
 def match_len(num):
     if len(names[num]) != 12:
         add_to = 12 - len(names[num])
-        if len(names[num]) != 12:
-            names[num].ljust(len(names[num]) + add_to)
+        names[num].ljust(len(names[num]) + add_to)
 
 
 # Folder
