@@ -5,6 +5,7 @@ Note:
 ````
 1. The file type does not matter, as long as its only 3 digits.
 2. Details must be recorded using ().
+3. Files are saved to a csv
 ````
 
 Slips name must be recorded in one of these formate:
@@ -15,7 +16,6 @@ Slips name must be recorded in one of these formate:
 ````
 
 ### **Recorded Slips** ###
-In a csv file:
 ````
 Date        Details   Category      Price  Duplicates
 2021-10-10  Checkers  Consumables   R200
