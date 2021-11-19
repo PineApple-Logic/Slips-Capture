@@ -2,13 +2,13 @@
 
 ### **Requirements** ###
 Note:
-````bash
+````
 1. The file type does not matter.
 2. Details must be recorded using ().
 ````
 
 Slips name must be recorded in one of these formate:
-````bash
+````
 2021-01-01 (Checkers) C R200.png
 
 2021-10-10 (Checkers) C R200 (2).jpg
@@ -18,7 +18,7 @@ Slips name must be recorded in one of these formate:
 
 ### **Recorded Slips** ###
 In a csv file:
-````bash
+````
 Date        Details   Category      Price  Duplicates
 2021-10-10  Checkers  Consumables   R200
 2021-10-10  Checkers  Other         R200   (2)
