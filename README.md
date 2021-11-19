@@ -2,13 +2,16 @@
 
 ### **Requirements** ###
 Note: There can only be one space.
-      The file type does not matter
+      The file type does not matter.
+      Details contining multiable names must be recorded using ()
 
-Slips name must be recorded in this formate:
+Slips name must be recorded in one of these formate:
 ````bash
 2021-01-01 Checkers C R200.png
-            or
-2021-10-10 Checkers C R200 (2).png
+
+2021-10-10 Checkers C R200 (2).jpg
+
+2021-10-10 (Builders WareHouse) C R200 (2).pdf
 ````
 
 ### **Recorded Slips** ###
