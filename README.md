@@ -23,5 +23,5 @@ Date        Details   Category      Price  Duplicates
 2021-10-10  Builders  Equipment     R5000
 ````
 
-### SETUP ####
-Windows exe,  [Link](https://mega.nz/file/ytxUhaKQ#8L4DQsxV62zSQzZSkPyHja9J5_lH1vdeWpoWfm_B9lg)
+### Download ###
+Windows, [Slips Capture.exe](https://mega.nz/file/ytxUhaKQ#8L4DQsxV62zSQzZSkPyHja9J5_lH1vdeWpoWfm_B9lg)
