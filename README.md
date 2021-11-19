@@ -3,16 +3,14 @@
 ### **Requirements** ###
 Note:
 ````
-1. The file type does not matter.
+1. The file type does not matter, as long as its only 3 digits.
 2. Details must be recorded using ().
 ````
 
 Slips name must be recorded in one of these formate:
 ````
 2021-01-01 (Checkers) C R200.png
-
 2021-10-10 (Checkers) C R200 (2).jpg
-
 2021-10-10 (Builders WareHouse) C R200 (2).pdf
 ````
 
