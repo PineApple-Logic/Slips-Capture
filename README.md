@@ -1,4 +1,4 @@
-# Slips_Logger
+# Slips Chapture
 
 ### **Requirements** ###
 Note: There can only be one space.
