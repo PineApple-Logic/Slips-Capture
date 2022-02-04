@@ -71,6 +71,12 @@ for filename in filenames:
         elif names[1] == 'S':
             names[1] = 'Stationery'
             match_len(names[1])
+        elif names[1] == 'D':
+            names[1] = 'Diesel'
+            match_len(names[1])
+        elif names[1] == 'P':
+            names[1] = 'Petrol'
+            match_len(names[1])
         else:
             print(f"Failed to determine the Category's Full name of {names[1]}")
             print()
