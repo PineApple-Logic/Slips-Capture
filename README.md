@@ -10,10 +10,10 @@ Note:
 
 Slips name must be recorded in one of these formate:
 ````
-Date        Details   Category Price Duplicates
+Date        Details  Category Price Duplicates
 2021-01-01 (Checkers) C R200.png
 2021-10-10 (Checkers) C R200 (2).jpg
-2021-10-10 (Builders WareHouse) C R200 (2).pdf
+2021-10-10 (Builders) C R200 (2).pdf
 ````
 
 Slip Category list
