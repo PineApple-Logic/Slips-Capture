@@ -15,6 +15,12 @@ x = {"Date": [],
 date = f'./{today.strftime("%d-%b-%Y")}.csv'
 
 
+def logged(file):
+    with open('files.txt', 'w') as f:
+        f.write(file)
+        f.write('/n')
+
+
 def match_len(name):
     if len(name) != 12:
         add_to = 12 - len(name)
@@ -23,6 +29,7 @@ def match_len(name):
 
 # Checks the file name
 def check(filename):
+    logged(filename)
     print('-------------------------------------------------------------------------------')
     print(f'Note that there is an abnormal amount of words/number sets for slip:')
     print(f'{filename[:-4]}')
@@ -74,6 +81,7 @@ def capture(filename):
             names[1] = 'Fuel'
             match_len(names[1])
         else:
+            logged(filename)
             print(f"Failed to determine the Category's Full name of {names[1]}")
             print()
             full_name = input('Full name:')
