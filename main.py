@@ -16,7 +16,7 @@ date = f'./{today.strftime("%d-%b-%Y")}.csv'
 
 
 def logged(file):
-    with open('files.txt', 'w') as f:
+    with open('files.txt', 'a') as f:
         f.write(file + "\n")
 
 
