@@ -31,18 +31,24 @@ print()
 
 # Capturing slips
 filenames = os.listdir(path)
+print('Scanned:')
 for filename in filenames:
-    details = filename[filename.find('(') + 1: filename.find(')')]
+    detail = filename[filename.find('(') + 1: filename.find(')')]
+    if detail != filename[0:-1]:
+        details = detail
+    else:
+        details = 'Missing'
     file = filename.replace(filename[filename.find('('): filename.find(')') + 1], '')
     names = file[:-4].split()
-    print(details)
-    print(file)
+    print(filename)
     if len(names) >= 5 or len(names) <= 2:
         print()
-        print(f'Note that there is an abnormal amount of words/number sets for slip  ({names})')
+        print(f'Note that there is an abnormal amount of words/number sets for slip:')
+        print(f'{filename})')
         print('It will not be recorded')
         print()
-        input('Press Enter to continue')
+        newname = input('New file name:')
+        os.rename(f'{filename}', f'{newname}')
         print()
     else:
         x['Date'].append(names[0])
