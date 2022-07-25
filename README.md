@@ -36,4 +36,4 @@ Date        Details   Category      Price  Duplicates
 ````
 
 ### Download ###
-Windows, [Slips Capture.exe](https://mega.nz/file/OhBlTACb#YFAmDneo5K-OGZzBN8jhyu7oB6CcoNVIs8D49lFUFpY)
+Windows, [Slips Capture.exe](https://mega.nz/file/34hmTJ5I#6ruoM6j1PT3VPtKtxpzc7huC_fCMZYqRbwT9yzGrsAA)
