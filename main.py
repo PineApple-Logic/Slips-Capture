@@ -81,10 +81,12 @@ def capture(filename):
             names[1] = 'Fuel'
             match_len(names[1])
         else:
+            print('-------------------------------------------------------------------')
             logged(filename)
             print(f"Failed to determine the Category's Full name of {names[1]}")
             print()
             full_name = input('Full name:')
+            print('--------------------------------------------------------------------')
             names[1] = full_name
             match_len(names[1])
         x['Category'].append(names[1])
