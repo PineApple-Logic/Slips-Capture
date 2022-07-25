@@ -17,8 +17,7 @@ date = f'./{today.strftime("%d-%b-%Y")}.csv'
 
 def logged(file):
     with open('files.txt', 'w') as f:
-        f.write(file)
-        f.write('/n')
+        f.write(file + "\n")
 
 
 def match_len(name):
