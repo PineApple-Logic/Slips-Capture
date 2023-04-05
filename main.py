@@ -68,7 +68,7 @@ def capture(filename):
             names[1] = 'Equipment'
             match_len(names[1])
         elif names[1] == 'T':
-            names[1] = 'Toll'
+            names[1] = 'Toll and Travel'
             match_len(names[1])
         elif names[1] == 'F':
             names[1] = 'Food'
@@ -78,6 +78,9 @@ def capture(filename):
             match_len(names[1])
         elif names[1] == 'D':
             names[1] = 'Fuel'
+            match_len(names[1])
+        elif names[1] == 'M':
+            names[1] = 'Maintenance'
             match_len(names[1])
         else:
             print('-------------------------------------------------------------------')
